@@ -1,6 +1,7 @@
 <template>
   <q-input
     v-model="search"
+    @input="onInput"
     outlined
     dense
     placeholder="Поиск по имени или городу"
