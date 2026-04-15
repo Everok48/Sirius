@@ -1,9 +1,6 @@
-import { fakerRU } from '@faker-js/faker'
-import { writeFileSync } from 'fs'
-import { dirname, resolve } from 'path'
-import { fileURLToPath } from 'url'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
+const { fakerRU } = require('@faker-js/faker')
+const { writeFileSync } = require('fs')
+const { resolve } = require('path')
 
 const cities = ['Омск', 'Красноярск', 'Новосибирск', 'Москва', 'Санкт-Петербург']
 const statuses = ['new', 'in_progress', 'approved', 'rejected']

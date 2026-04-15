@@ -2,9 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-toolbar-title>
-          Sirius CRM — Заявки партнёров
-        </q-toolbar-title>
+        <q-toolbar-title> Sirius CRM </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -16,6 +14,6 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>

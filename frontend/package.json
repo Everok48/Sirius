@@ -2,14 +2,14 @@
   "name": "frontend",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "generate-db": "node scripts/generate-db.js",
+    "generate-db": "node scripts/generate-db.cjs",
     "server": "json-server --watch db.json",
     "start:dev": "vue-cli-service serve --port 3000",
     "start:all": "concurrently \"npm run server\" \"npm run start:dev\"",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "format": "prettier --write \"src/**/*.{js,vue,css,scss}\""
   },
   "dependencies": {
     "@quasar/extras": "^1.16.0",
@@ -23,9 +23,16 @@
   "devDependencies": {
     "@faker-js/faker": "^9.0.0",
     "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-eslint": "^10.1.0",
     "concurrently": "^9.0.0",
-    "json-server": "^1.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "json-server": "^0.17.0",
+    "prettier": "^2.8.0",
     "sass": "^1.69.0",
     "sass-loader": "^10.4.1",
     "vue-template-compiler": "^2.7.16"
